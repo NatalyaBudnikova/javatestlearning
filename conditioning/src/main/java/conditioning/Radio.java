@@ -1,5 +1,8 @@
 package conditioning;
 
+import lombok.*;
+
+@Getter @Setter
 public class Radio {
     private boolean on;
     private int station;
@@ -15,43 +18,10 @@ public class Radio {
         this.on = on;
     }
 
-    public boolean isOn() {
-        return on;
-    }
-
-    public void setOn(boolean on) {
-        this.on = on;
-    }
-
-    public int getStation() {
-        return station;
-    }
-
     public void setStation(int station) {
         if (station >= minStation && station <= maxStation) {
             this.station = station;
         }
-    }
-
-    public int getMinStation() {
-        return minStation;
-    }
-
-    public int getMaxStation() {
-        return maxStation;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public int getMinVolume() {
-        return minVolume;
-    }
-
-
-    public int getMaxVolume() {
-        return maxVolume;
     }
 
     public void next() {
@@ -82,9 +52,5 @@ public class Radio {
             return;
         }
         volume--;
-    }
-
-    public void setMaxStation(int maxStation) {
-        this.maxStation = maxStation;
     }
 }

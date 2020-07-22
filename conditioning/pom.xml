@@ -50,7 +50,7 @@
                                 <limit>
                                     <counter>BRANCH</counter>
                                     <value>COVEREDRATIO</value>
-                                    <minimum>100%</minimum>
+                                    <minimum>85%</minimum>
                                 </limit>
                             </limits>
                         </rule>
@@ -67,6 +67,12 @@
             <artifactId>junit-jupiter</artifactId>
             <version>5.7.0-M1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
